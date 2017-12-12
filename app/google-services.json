@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "143384261568",
+    "firebase_url": "https://fir-test-a5a08.firebaseio.com",
+    "project_id": "fir-test-a5a08",
+    "storage_bucket": "fir-test-a5a08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143384261568:android:2e2186fdfaf1fba8",
+        "android_client_info": {
+          "package_name": "com.google.watermap.p.gary.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143384261568-srockgdv8co68nfbmco8acfhooe7faru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.watermap.p.gary.firebasetest",
+            "certificate_hash": "8d8231ed2b1aa6f7641e14da91922909793c80de"
+          }
+        },
+        {
+          "client_id": "143384261568-mduof70ej8n8q0gj3u932b65ftcdtknq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOabNkhEoESFdSY31uZ0RWmk51OR7RbFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143384261568-mduof70ej8n8q0gj3u932b65ftcdtknq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143384261568:android:4300865744c5c4f1",
+        "android_client_info": {
+          "package_name": "com.google.watermap.p.gary.makertestwithfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143384261568-houqi2f9kt86a17fqbmbs1sq25qlfm4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.watermap.p.gary.makertestwithfirebase",
+            "certificate_hash": "8d8231ed2b1aa6f7641e14da91922909793c80de"
+          }
+        },
+        {
+          "client_id": "143384261568-mduof70ej8n8q0gj3u932b65ftcdtknq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOabNkhEoESFdSY31uZ0RWmk51OR7RbFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143384261568-mduof70ej8n8q0gj3u932b65ftcdtknq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -108,8 +108,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public boolean onMarkerClick(Marker marker) {
                 Log.i("oMC", "TRUE");
                 CameraPosition cameraPosition = mMap.getCameraPosition();
+                VisibleRegion screenRegion = mMap.getProjection().getVisibleRegion();
+                LatLng topRight = screenRegion.latLngBounds.northeast;
+                LatLng bottomLeft = screenRegion.latLngBounds.southwest;
+                double screenDistance = SphericalUtil.computeDistanceBetween(topRight, bottomLeft) * cos(40) / 8;
                 double theta = cameraPosition.tilt;
-                double distance = 1 / earth_dis;
+                double distance = screenDistance / earth_dis;
                 double moveLat = distance * sin(theta);
                 double moveLng = distance * cos(theta);
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(marker.getPosition().latitude + moveLat, marker.getPosition().longitude + moveLng)));

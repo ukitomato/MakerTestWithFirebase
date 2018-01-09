@@ -111,11 +111,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 VisibleRegion screenRegion = mMap.getProjection().getVisibleRegion();
                 LatLng topRight = screenRegion.latLngBounds.northeast;
                 LatLng bottomLeft = screenRegion.latLngBounds.southwest;
-                double screenDistance = SphericalUtil.computeDistanceBetween(topRight, bottomLeft) * cos(40) / 8;
+                double screenDistance = SphericalUtil.computeDistanceBetween(topRight, bottomLeft) * sin(40) *25;
                 double theta = cameraPosition.tilt;
                 double distance = screenDistance / earth_dis;
-                double moveLat = distance * sin(theta);
-                double moveLng = distance * cos(theta);
+                double moveLat = distance * cos(theta);
+                double moveLng = distance * sin(theta);
+
+                marker.showInfoWindow();
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(marker.getPosition().latitude + moveLat, marker.getPosition().longitude + moveLng)));
                 return true;
             }
@@ -162,7 +164,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.i("Value", kind + ":" + level + ":" + latitude + ":" + longitude + ":" + uri);
         if (latitude != null && longitude != null) {
             DatabasePlace dbPlace = new DatabasePlace(key, (String) kind, (long) level, (Double) latitude, (Double) longitude, (long) id);
-
             placeMap.put(key, dbPlace);
         }
     }
